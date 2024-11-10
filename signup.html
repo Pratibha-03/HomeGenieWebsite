@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - HomeGenie</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            inline-size: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+    <header>
+        <h1>Sign Up for HomeGenie</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <center>
+            <div class="container">
+                <form id="signupForm" action="" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Full Name"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email"><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Password"><br>
+
+                    <button type="submit" id="submit">Create Account</button>
+                </form>
+                <div>
+                    <p> Have An Account?
+                        <span><a href="login.html">Login Here</a></span>
+                    </p>
+                </div>
+                <p id="signupMessage" style="display:none;"></p>
+            </div>
+        </center>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="module" src="signup.js" defer></script>
+
+</body>
+
+</html>
